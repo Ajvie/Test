@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Laboratory 1</title>
+    <style>
+        form{
+            border: 1px solid #cccccc;
+            padding: 16px;
+            font-size: 14px;
+            font-family: Calibri;
+            font-weight: bold;
+        }
+        h1{
+            font-family: Calibri;
+        }
+        .inputformat{
+            width: 100%;
+            padding: 20px;
+            display: inline-block;
+            margin: 8px 0px;
+            border: 1px solid #cccccc;
+        }
+        #signup{
+            color: white;
+            padding: 12px;
+            margin: 8px 0px;
+            border: none;
+            width: 50%;
+            float: left;
+            background-color: #4caf50;
+        }
+        #clear{
+            color: white;
+            padding: 12px;
+            margin: 8px 0px;
+            border: none;
+            width: 50%;
+            float: right;
+            background-color: #f44336;
+        }
+    </style>
+</head>
+<body>   
+    <form>
+        <center>
+            <h1>Signup Form</h1>
+        </center>
+        <label for="fname">First Name:</label>
+        <input class="inputformat" type="text" name="fname" placeholder="Enter your First Name..." required/>
+
+        <label for="mname">Middle Name:</label>
+        <input class="inputformat" type="text" name="mname" placeholder="Enter your Middle Name...">
+        
+        <label for="lname">Last Name:</label>
+        <input class="inputformat" type="text" name="lname" placeholder="Enter your last Name..." required/>
+
+        <label for="user">Username:</label>
+        <input class="inputformat" type="text" name="user" placeholder="Enter a Username..." required/>
+
+        <label for="pass">Password:</label>
+        <input class="inputformat" type="password" name="pass" placeholder="Enter your Password..." required/>
+
+        <label for="email">Email:</label>
+        <input class="inputformat" type="email" name="email" placeholder="Enter your Email"/>
+
+        <label for="sex">Sex:</label>
+        <br>
+        <input type="radio" name="sex" required/>
+        <label for="sex">Male</label>
+        <input type="radio" name="sex" required/>
+        <label for="sex">Female</label>
+        <br><br>
+        <label for="bday">Birthday:</label>
+        <input class="inputformat" type="date" name="bday" required/>
+        <br>
+        <label for="status">Civil Status:</label>
+        <select class="inputformat" name="status">
+            <option>Single</option>
+            <option>Married</option>
+            <option>Separated</option>
+            <option>Widowed</option>
+        </select>
+        <input class="inputformat" type="submit" value="Signup" id="signup">
+        <input class="inputformat" type="reset" value="Clear" id="clear">
+    </form>
+</body>
+</html>
